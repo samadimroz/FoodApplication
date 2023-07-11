@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="#ffffff"
+    android:layout_margin="6dp"
+    cardCornerRadius="5dp"
+    android:id="@+id/cardRestaurant">
+    
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        
+        <ImageView
+            android:id="@+id/imgRestaurant"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/food_logo"/>
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtRestaurantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Restaurant Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/txtCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cost"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/ic_action_rupee"/>
+
+        </LinearLayout>
+        
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imgIsFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="2dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_action_favourite" />
+
+            <TextView
+                android:id="@+id/txtRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:textColor="#ffc107"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
